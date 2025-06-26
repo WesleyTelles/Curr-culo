@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #eef1f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Sidebar (coluna lateral) */
+.sidebar {
+  background-color: #2e3a59;
+  color: #fff;
+  padding: 30px;
+  width: 30%;
+}
+
+.profile h1 {
+  font-size: 1.8em;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.profile .title {
+  font-size: 1em;
+  color: #cfd8e6;
+  text-align: center;
+}
+
+.sidebar h2 {
+  font-size: 1.2em;
+  margin-top: 30px;
+  border-bottom: 1px solid #44506b;
+  padding-bottom: 5px;
+}
+
+.sidebar p, .sidebar ul {
+  margin-top: 10px;
+  font-size: 0.95em;
+}
+
+.sidebar a {
+  color: #89c4ff;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills li {
+  background-color: #44506b;
+  padding: 6px 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+/* Área principal */
+.content {
+  padding: 30px;
+  width: 70%;
+}
+
+.content h2 {
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  color: #2e3a59;
+  border-bottom: 2px solid #dde1e7;
+  padding-bottom: 5px;
+}
+
+.content .item {
+  margin-bottom: 20px;
+}
+
+.content h3 {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.content em {
+  font-size: 0.9em;
+  color: #888;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .content {
+    width: 100%;
+  }
+
+  .sidebar {
+    text-align: center;
+  }
+}
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
